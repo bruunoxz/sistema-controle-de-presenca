@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../estilo/estilo.css">
+    <title>Cadastro Aluno</title>
+</head>
+<body>
+    <header>
+        <h1>Cadastro de Aluno</h1>
+    </header>
+    <section>
+        <div class="form">
+            <div id="dados">
+                <form action="/cadaluno" method="POST" id="formulario2">
+                    <p>Nome:</p>
+                    <p><input type="text" name="nome" id="nm"></p>
+                    <p>Data de Nascimento:<span style="margin-right: 137px;"></span>Sexo:</p>
+                    <p><input type="date" name="dt" id="dt">  
+                        <select name="sexo" id="sexo">
+                            <option value="M">M</option>
+                            <option value="F">F</option>
+                        </select>
+                    </p>
+                    <p>RM:<span style="margin-right: 259px;"></span>Série:</p>
+                    <p><input type="number" name="RM" id="rm"> 
+                        <select name="Série" id="serie">
+                        <option value="1º - E.F.">1º - E.F.</option>
+                        <option value="2º - E.F.">2º - E.F.</option>
+                        <option value="3º - E.F.">3º - E.F.</option>
+                        <option value="4º - E.F.">4º - E.F.</option>
+                        <option value="5º - E.F.">5º - E.F.</option>
+                        <option value="6º - E.F.">6º - E.F.</option>
+                        <option value="7º - E.F.">7º - E.F.</option>
+                        <option value="8º - E.F.">8º - E.F.</option>
+                        <option value="9º - E.F.">9º - E.F.</option>
+                        <option value="1º - E.M.">1º - E.M.</option>
+                        <option value="2º - E.M.">2º - E.M.</option>
+                        <option value="3º - E.M.">3º - E.M.</option>
+                    </select> </p>
+                    <div id="but"><p><button id="cadaluno" type="submit">Cadastrar</button></p></div>
+                </form>
+                <div id="resA"></div>
+            </div>
+            <input type="button" value="Voltar" id="vtCad" onclick="vtCad()">
+        </div>
+    </section>
+    <footer>
+        <p>&copy;SESI</p>
+    </footer>
+    <script src="../scripts/script.js"></script>
+</body>
+</html>
