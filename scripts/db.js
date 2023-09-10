@@ -1,6 +1,6 @@
 const Sequelize = require("sequelize") //Importa o framework
 
-const sequelize = new Sequelize('projeto', 'root', 'sesi123',{ //Se refere ao banco de dados
+const sequelize = new Sequelize('cadastros', 'root', 'Dev0303!',{ //Se refere ao banco de dados
     host: "localhost",
     dialect: "mysql"
 })
